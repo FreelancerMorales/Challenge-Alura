@@ -1,5 +1,4 @@
 function encriptar() { 
-
     var texto = document.getElementById("texto").value;
     var encriptado = texto
         .replace(/e/img, 'enter')
@@ -7,21 +6,12 @@ function encriptar() {
         .replace(/a/img, 'ai')
         .replace(/o/img, 'ober')
         .replace(/u/img, 'ufat');
-     document.getElementById("area").value = encriptado; // al dar click en btn encriptar , hace lo de abajo:muestra y oculta
-     document.getElementById("area").style.display = 'block'; // mostrar el area de texto
+    document.getElementById("area").value = encriptado; // al dar click en btn encriptar , hace lo de abajo:muestra y oculta
+    document.getElementById("area").style.display = 'block'; // mostrar el area de texto
 
-    document.getElementById("btnCopiar").style.display = 'block'; //mostrar boton copiar
-   
-     document.querySelector('.resultado__subtitulo').style.display = 'none';  // oculta el subtitulo
-     document.querySelector('.resultado__parrafo').style.display = 'none'; // oculta el parrafo 
-     
-     //document.querySelector('.btn__container').classList.add('btn__container--copy'); // esto alinea los botones
-     /*document.querySelector('.resultado__contenido').style.display = 'flex';
-     
-  document.querySelectorAll('.resultado__subtitulo, .resultado__parrafo').forEach(function(element) {
-    element.style.display = 'none';
-  });*/
-
+    document.getElementById("btnCopiar").style.display = 'block'; //mostrar botón copiar
+    document.querySelector('.resultado__subtitulo').style.display = 'none';  // oculta el subtitulo
+    document.querySelector('.resultado__parrafo').style.display = 'none'; // oculta el párrafo 
 }
 
 function desencriptar(){
@@ -33,14 +23,14 @@ function desencriptar(){
         .replace(/ober/img, 'o')
         .replace(/ufat/img, 'u');
     document.getElementById("area").value = desencriptar;    
-    document.getElementById("btnBorrar").style.display = 'block';  //con esto aparece boton borrar
+    document.getElementById("btnBorrar").style.display = 'block';  //con esto aparece botón borrar
 }
 
 function copiar(){
     //al poner .value se refiere al elemento texto
     // sin value se refiere al area
-   var copiarArea = document.getElementById("area");//cuando usas select() No se usa value
-   copiarArea.select(); // selecciona el id ("area") y lo resalta como si seleccionaras un texto
+    var copiarArea = document.getElementById("area");//cuando usas select() No se usa value
+    copiarArea.select(); // selecciona el id ("area") y lo resalta como si seleccionaras un texto
     document.execCommand('copy'); // copia el area resaltada
 
 }
@@ -50,4 +40,4 @@ function borrar() {
     document.getElementById("area").value = ""; // borra el texto del textarea de salida
     document.getElementById("area").style.display = 'block'; // oculta el textarea de salida
     // También puedes agregar código para ocultar los botones y otros elementos que desees
-  }
+}

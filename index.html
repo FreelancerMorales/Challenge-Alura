@@ -6,47 +6,45 @@
     <title>Encriptador de texto</title>
 
     <link rel="stylesheet" href="css/estilos1.css">
-    <script src="js/encriptacion1.js"></script>
-
 </head>
 <body>
-  
     <header>
-      <div class="logo">
-      <img src="images/Logo.png" alt="imagen del logo de Alura">
-      </div>
-      <div class="titulo" >
-      <h1>Alura Challenge!</h1>
-      </div>
+        <div class="logo">
+        <img src="images/Logo.png" alt="imagen del logo de Alura">
+        </div>
+        <div class="titulo" >
+        <h1>Alura Challenge!</h1>
+        </div>
     </header>
-   
->    
     <main class="presentacion"> 
-         <section class="seccion__1">
-          <textarea class="area1" type="text" id="texto" placeholder="ingrese el texto aqui"></textarea>
-          <div class="terminos">
-            <img src="images/danger.png" alt="imagen signo de exclamación">
-              <span>Solo letras minúsculas y sin acentos</span>
-          </div>
+        <section class="seccion__1">
+            <textarea class="area1" type="text" id="texto" placeholder="ingrese el texto aqui"></textarea>
+            <div class="terminos">
+                <img src="images/danger.png" alt="imagen signo de exclamación">
+                <span>Solo letras minúsculas y sin acentos</span>
+            </div>
+
             <div class="contenedor_botones1"> 
-               <button type="button" id="btnEncriptar" onclick="encriptar()" class="btn_encriptar">Encriptar!</button>
-               <button type="button" id="btnDesencriptar" onclick="desencriptar()" class="btn_desencriptar">Desencriptar!</button>
+                <button type="button" id="btnEncriptar" onclick="encriptar()" class="btn_encriptar">Encriptar!</button>
+                <button type="button" id="btnDesencriptar" onclick="desencriptar()" class="btn_desencriptar">Desencriptar!</button>
             </div>
         </section>
 
         <section class="seccion__2">
-          <textarea class="area2" name="area" id="area" placeholder="Resultado ..." readonly></textarea>
+            <textarea class="area2" name="area" id="area" placeholder="Resultado ..." readonly></textarea>
             <div class="contenedor_botones2"> 
-              <button type="button" id="btnCopiar" style="display: none;" onclick="copiar()" class="btn_copiar">Copiar</button>
-              <button type="button" id="btnBorrar" style="display: none;" onclick="borrar()" class="btn_borrar">Borrar</button>
+                <button type="button" id="btnCopiar" style="display: none;" onclick="copiar()" class="btn_copiar">Copiar</button>
+                <button type="button" id="btnBorrar" style="display: none;" onclick="borrar()" class="btn_borrar">Borrar</button>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <h2><b>Desarrollado por Elvis Trinidad</b></h2>
+        <a href="https://github.com/ElvisTrinidad"><img src="images/github.png" alt="Logo de Git Hub"></a>
+        <a href="https://es-la.facebook.com/"><img src="images/facebook (1).png" alt="imagen de facebook"></a>
+        <a href="https://www.linkedin.com/feed/"><img src="images/linkedin.png" alt="imagen de linkedIn"></a>
+    </footer>
+    
+    <script src="js/encriptacion1.js"></script>
 </body>
-<footer class="footer">
-  <h2><b>Desarrollado por Elvis Trinidad</b></h2>
- <a href="https://github.com/ElvisTrinidad"><img src="images/github.png" alt="Logo de Git Hub"></a>
-<a href="https://es-la.facebook.com/"><img src="images/facebook (1).png" alt="imagen de facebook"></a>
-<a href="https://www.linkedin.com/feed/"><img src="images/linkedin.png" alt="imagen de linkedIn"></a></footer>
-
 </html>
