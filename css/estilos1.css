@@ -1,0 +1,177 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  header {
+    background-color: #00712D;
+    color: black;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .logo {
+    display: inline-block;
+    margin-right: 1em;
+  }
+  .logo:hover{
+    transform: translateX(10px);
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.5s ease;
+  }
+  
+  .titulo {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    animation: moveContinuous 10s linear infinite;
+  }
+  @keyframes moveContinuous{
+    0%{
+      transform: translateX(0);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(100%);
+    }
+  }
+  
+  .presentacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em;
+    background-color:#FFFBE6;
+    
+  }
+  
+  .seccion__1 {
+    width: 40%; /* Ancho del primer contenedor */
+    margin-right: 2em;
+  }
+  
+  .seccion__2 {
+    width: 40%; /* Ancho del segundo contenedor */
+    margin-left: 2em;
+  } 
+
+  .area1{
+    width: 100%;
+  height: 150px;
+  padding: 1em;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1em;
+  
+  }
+  
+.area2{
+    width: 100%;
+  height: 150px;
+  padding: 1em;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1em;
+  
+}
+
+  .contenedor_botones1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .contenedor_botones2 {
+    display: flex;
+    flex-direction: row; /* Agregado para que los botones estén debajo del textarea */
+    justify-content: space-between;  
+}
+  
+  button {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 1em; /* Agregado para separar los botones */
+  }
+  
+  button:hover {
+    background-color: #f3f3f3;
+    cursor: pointer;
+    background-color: #FF0000;
+    transition: 10ms;
+    padding: 2%;
+    border-color: #0000FF;
+    
+  }
+  
+  .btn_encriptar {
+    background-color: #0A3871;
+    ;
+  }
+  
+  .btn_desencriptar {
+    background-color: #f3f5f3;
+    color: #0A3871;
+  }
+  
+  .btn_copiar {
+    background-color: #0A3871;
+    margin-left: 0;
+  }
+  
+  .btn_borrar {
+    background-color: #f3f5f3;
+    margin-right: 0;
+    color: #0A3871;
+    border-color: #0A3871;
+  }
+
+  footer{
+    background-color: #FF9100;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding: 20px;
+    color: black;
+    transition: transform 0.3s;
+    transform: scale(1.2);
+  }
+
+  /* Media Queries */
+@media (max-width: 768px) {
+  .presentacion {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .seccion__1, .seccion__2 {
+      width: 90%;
+      margin: 1em 0;
+  }
+
+  .contenedor_botones1, .contenedor_botones2 {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  button {
+      width: 100%;
+      margin-bottom: 1em;
+  }
+}
+ 
