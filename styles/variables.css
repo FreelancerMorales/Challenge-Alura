@@ -64,3 +64,7 @@ button:hover{
 .area{
     box-shadow: 0 0 10px 1px var(--btn-primary-bg);
 }
+
+.area:focus{
+    box-shadow: 0 0 15px 5px var(--btn-hover-bg);
+}
