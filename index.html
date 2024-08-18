@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
-    <link rel="stylesheet" href="css/estilos1.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <header class="text-center">
-        <div class="logo">
-            <img src="images/Logo.png" alt="imagen del logo de Alura">
-        </div>
-        <h1 class="titulo">Alura Challenge!</h1>
+        <h1 class="titulo">¡Alura Challenge!</h1>
     </header>
     <main class="presentacion flex-row">
         <section class="seccion">
+            <h2 class="h2">Encriptar</h2>
+            <!-- Textarea con Limite -->
             <textarea class="area" id="texto" placeholder="ingrese el texto aqui"></textarea>
             <div class="terminos">
-                <img src="images/danger.png" alt="imagen signo de exclamación">
-                <span>Solo letras minúsculas y sin acentos</span>
+                <i class="bi bi-exclamation-octagon"> Solo letras minúsculas y sin acentos</i>
             </div>
             <div class="contenedor-botones flex-row">
-                <button type="button" id="btnEncriptar" onclick="encriptar()" class="btn-encriptar">Encriptar!</button>
-                <button type="button" id="btnDesencriptar" onclick="desencriptar()" class="btn-desencriptar">Desencriptar!</button>
+                <button type="button" id="btnEncriptar" onclick="encriptar()" class="btn-encriptar">¡Encriptar!</button>
+                <button type="button" id="btnDesencriptar" onclick="desencriptar()" class="btn-desencriptar">¡Desencriptar!</button>
             </div>
         </section>
         <section class="seccion">
+            <h2 class="h2">Desencriptar</h2>
             <textarea class="area" name="area" id="area" placeholder="Resultado ..." readonly></textarea>
             <div class="contenedor-botones flex-row">
                 <button type="button" id="btnCopiar" style="display: none;" onclick="copiar()" class="btn-copiar">Copiar</button>
@@ -34,10 +34,14 @@
         </section>
     </main>
     <footer class="footer text-center">
-        <h2><b>Desarrollado por Elvis Trinidad</b></h2>
-        <a href="https://github.com/ElvisTrinidad"><img src="images/github.png" alt="Logo de Git Hub"></a>
-        <a href="https://es-la.facebook.com/"><img src="images/facebook (1).png" alt="imagen de facebook"></a>
-        <a href="https://www.linkedin.com/feed/"><img src="images/linkedin.png" alt="imagen de linkedIn"></a>
+        <h2>Desarrollado por Antonio Morales</h2>
+        <div class="icons">
+            <a href="https://github.com/ElvisTrinidad"><i class="bi bi-github"></i></a>
+            
+            <a href="https://es-la.facebook.com/"><i class="bi bi-facebook"></i></a>
+
+            <a href="https://www.linkedin.com/feed/"><i class="bi bi-linkedin"></i></a>
+        </div>
     </footer>
     <script src="js/encriptacion1.js"></script>
 </body>
