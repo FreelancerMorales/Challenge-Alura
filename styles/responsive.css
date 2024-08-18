@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+    main{
+        overflow-y: scroll;
+    }
+
+    .presentacion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .contenedor-botones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 95%;
+    }
+}

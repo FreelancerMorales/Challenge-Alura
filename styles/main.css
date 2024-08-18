@@ -1,28 +1,11 @@
-:root {
-    --primary-color: #242424;
-    --secondary-color: #414141;
-    --font-size-base: 16px;
-    --font-family-base: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    --btn-hover-bg: #960088;
-    --btn-primary-bg: #00b1a0;
-    --btn-secondary-bg: #616161;
-    --btn-secondary-color: #dadada;
-}
-
 /* Estilos base */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: var(--btn-secondary-color);
-}
-
-body {
-    font-family: var(--font-family-base);
 }
 
 header {
-    background-color: var(--primary-color);
     padding: 1rem;
     text-align: center;
     display: flex;
@@ -31,30 +14,12 @@ header {
 }
 
 footer {
-    background-color: var(--primary-color);
     width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.icons{
-    width: 30%;
-    margin: 0.5rem;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 0;
-}
-
-.icons i{
-    font-size: 1.8rem;
-    color: var(--btn-primary-bg);
-}
-
-.icons i:hover{
-    color: var(--btn-hover-bg);
 }
 
 header, footer{
@@ -70,144 +35,16 @@ main{
     align-items: center;
 }
 
-/* Clases utilitarias */
-.text-center {
-    text-align: center;
-}
-
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.bg-color {
-    background-color: var(--secondary-color);
-}
-
-/* Estilos específicos */
-.logo {
-    display: inline-block;
-    margin-right: 1em;
-}
-
-.logo img {
-    width: 100px;
-}
-
-.titulo {
-    font-size: 2.4rem;
-    color: var(--btn-primary-bg);
-    letter-spacing: 5px;
-}
-
-.h2{
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 1rem;
-    color: var(--btn-primary-bg);
-    letter-spacing: 3px;
-}
-
-.presentacion {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2em;
-    background-color: var(--secondary-color);
-}
-
-.seccion {
-    width: 40%;
-    margin: 1em;
-
-    min-height: 50vh;
-    max-height: 50vh;
-}
-
-.terminos{
-    padding-bottom: 1rem;
-}
-
-.area {
-    width: 100%;
-    height: 150px;
-    padding: 1em;
-    font-size: var(--font-size-base);
-    border: 1px solid var(--btn-secondary-color);
-    border-radius: 5px;
-    box-shadow: 0 0 10px 5px #1111114f;
-    margin-bottom: 1em;
-    color: var(--primary-color);
-    background-color: var(--btn-secondary-color);
-}
-
-.contenedor-botones {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
 button {
     width: 135px;
     height: 40px;
-    font-size: var(--font-size-base);
     border: none;
     border-radius: 5px;
-    background-color: var(--primary-color);
     cursor: pointer;
     margin-bottom: 1em;
     transition: background-color 0.3s ease, border-color 0.3s ease, padding 0.3s ease;
 }
 
 button:hover {
-    background-color: var(--btn-hover-bg);
     padding: 2%;
-}
-
-.btn-encriptar {
-    background-color: var(--btn-primary-bg);
-}
-
-.btn-desencriptar {
-    background-color: var(--btn-secondary-bg);
-    color: var(--btn-secondary-color);
-}
-
-.btn-copiar {
-    background-color: var(--btn-primary-bg);
-    margin-left: 0;
-}
-
-.btn-borrar {
-    background-color: var(--btn-secondary-bg);
-    margin-right: 0;
-    color: var(--btn-secondary-color);
-    border-color: var(--btn-primary-bg);
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    main{
-        overflow-y: scroll;
-    }
-
-    .presentacion {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .seccion {
-        width: 90%;
-        margin: 10px auto;
-    }
-
-    .contenedor-botones {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    button {
-        width: 95%;
-    }
 }
